@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #f4f4f4;
 }
 
 nav{
@@ -18,7 +19,7 @@ img{
     width: 4%;
     border-radius: 5%;
 }
-p{
+.logo-label{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -27,14 +28,125 @@ p{
 }
 .tape{
 margin-left: auto;
-margin-right: 10%;
+margin-right: 1%;
 }
-button{
-    
-    background-color: white;
+nav a{
+    background-color: transparent;
     color: gray;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+}
+nav a:hover,
+nav .tape a:first-child{
+    background-color: #bccee0;
+    color: #007bff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 2% auto 0 15%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+p{
+    display: flex;
+    position: relative;
+    top: -3%;
+    color: gray;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+    top: -5%;
+    padding-left: 0;
+    color: gray;
+    list-style: none;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+ul li::before{
+    content: "\2022";
+    font-size: xx-large;
+    transform: translateY(1.5px);
+    color: inherit;
+}
+ul li:nth-child(1)::before{
+    color: blue;
+}
+ul li:nth-child(2)::before{
+    color: #39ff14;
+}
+.task-input-group{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 63%;
+    margin-top: 20px;
+    position: relative;
+    top: -8%;
+}
+input[type="text"]{
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.add-task {
+    display: inline-block;
+    width: 20% ;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    font: inherit;
+}
+.task-filter {
+    display: flex;
+    gap: 6px;
+    position: relative;
+    top: -6%;
+    left: 0;
+    width: fit-content;
+    color: white;
+    border: none;
+    padding: 4px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.task-filter button {
+    flex: 0 0 auto;
+    background-color: white;
+    color: gray;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+.task-filter button:hover {
+    background-color: #007bff;
+    color: white;
 }

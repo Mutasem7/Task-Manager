@@ -9,12 +9,31 @@
 <body>
    
     <nav>
-        <p><img src="/img/check.png" /> Plasma</p>
-        <div class="tape"></div>  
-            <button>Tasks</button> 
-            <button>Details & Settings</button>
+        <p class = "logo-label"><img src="/img/check.png" /> Plasma</p>
+        <div class="tape">  
+        <a href="#">Tasks</a>
+        <a href="#">Details &amp; Settings</a>
         </div>
     </nav>
+    <div class="container">
+        <h1>Your Tasks</h1>
+        <p>Stay organized. Keep it simple.</p>
+        <ul>
+            <li>Total </li>
+            <li>completed  </li>
+            <li>pending </li>
+        </ul>
+        <div class="task-input-group">
+            <input type="text" placeholder="Add a new task" />
+            <button class="add-task">+ Add Task</button>
+        </div>
+        <div class="task-filter">
+            <button>All</button>
+            <button>Pending</button>
+            <button>Completed</button>
+        </div>
+    </div>
+    
    
 </body>
 </html>
